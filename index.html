@@ -48,8 +48,6 @@
 <body>
 
   <!-- Primary Page Layout - this is the "hierarchy" of the page
-
-    First, navigation - see https://materializecss.com/navbar.html  
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container" style="margin-top: 3%">
 
@@ -66,8 +64,6 @@
       </div>
     </div>
 
-      <!-- Then the actual menu "pages" - each page has a unique id, so we can hide or show them with jQuery  
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div id="page-one">
       <div class="row">
         <div class="col s12 m6">
@@ -86,10 +82,7 @@
           <h5>Example card from the Bored api</h5>
         </div>
       </div>
-
-      <!-- The "api-component-id's" are just placeholders, so e can let handlebars fill them up later  
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="api-component-page-one">
+      <div id="api-component-page-one">
       </div>
     </div>
 
@@ -184,7 +177,7 @@
     //Functions to actually get JSON data from external API's. When .done is called, you receive the data
     function getApiData(someparam) {
       $.ajax({
-        url: "https://www.boredapi.com/api/activity",
+        url: "https://www.boredapi.com/api/activity?participants=" + someparam,
       }).done(function (data) {
         console.log(data);
         $('#api-component-page-one').html(apiTemplate(data));
