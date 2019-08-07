@@ -1,5 +1,14 @@
 # api_one_page_template
-This is a one-page template to make a neat web-app using an external API with jQuery. The app use the following frameworks and boilerplates:
+
+<p>Simon Moe</p>
+<p>Programmering</p>
+<p>Årsprøve 2019</p>
+
+This is a one-page template to make a neat web-app using an external API with jQuery. 
+
+<a href="https://simmoe.github.io/api_one_page_template/">Watch the app in action here</a>
+
+The app use the following frameworks and boilerplates:
 
 <ul>
 <li><a href="https://github.com/toddmotto/public-apis">Some public API with little or no authentication</a></li>
